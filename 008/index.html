@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="" onsubmit="return PDF()">
+        <table>
+            <tr>
+                <th>Disiciplinas</th>
+                <th>10º</th>
+                <th>11º</th>
+                <th>12º</th>
+            </tr>
+            <tr>
+                <th colspan="4">Componente Geral</th>
+            </tr>
+            <tr>    
+                <td>Português</td>
+                <td><input type="number" name="" id="Port1" min="0" max="20" required></td>
+                <td><input type="number" name="" id="Port2" min="0" max="20" required></td>
+                <td><input type="number" name="" id="Port3" min="0" max="20" required></td>
+            </tr>
+            <tr>
+                <td>Inglês</td>
+                <td><input type="number" name="" id="Ing1" min="0" max="20" required></td>
+                <td><input type="number" name="" id="Ing2" min="0" max="20" required></td>
+                <td colspan="1"></td>
+            </tr>
+            <tr>
+                <td>Filosofia</td>
+                <td><input type="number" name="" id="Filos1" min="0" max="20" required></td>
+                <td><input type="number" name="" id="Filos2" min="0" max="20" required></td>
+                <td colspan="1"></td>
+            </tr>
+            <tr>
+                <td>Educação física</td>
+                <td><input type="number" name="" id="Ef1" min="0" max="20" required></td>
+                <td><input type="number" name="" id="Ef2" min="0" max="20" required></td>
+                <td colspan="1"></td>
+            </tr>
+            <tr>
+                <th colspan="4">Componente Científica</th>
+            </tr>
+            <tr>
+                <td>Matemática A</td>
+                <td><input type="number" name="" id="Mat1" min="0" max="20" required></td>
+                <td><input type="number" name="" id="Mat2" min="0" max="20" required></td>
+                <td><input type="number" name="" id="Mat3" min="0" max="20" required></td>
+            </tr>
+            <tr>
+                <td>Física Química A</td>
+                <td><input type="number" name="" id="Fq1" min="0" max="20" required></td>
+                <td><input type="number" name="" id="Fq2" min="0" max="20" required></td>
+                <td colspan="1"></td>
+            </tr>
+            <th colspan="4">Formação Tecnológica</th>
+            <tr>
+                <td>Aplicações Informáticas</td>
+                <td><input type="number" name="" id="Ai" min="0" max="20" required></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>Técnicas de Programação</td>
+                <td><input type="number" name="" id="Tp1" min="0" max="20" required></td>
+                <td><input type="number" name="" id="Tp2" min="0" max="20" required></td>
+                <td colspan="1"></td>
+            </tr>
+            <tr>
+                <td>Fundamentos de Arquitetura de Computadores</td>
+                <td><input type="number" name="" id="Fac1" min="0" max="20" required></td>
+                <td><input type="number" name="" id="Fac2" min="0" max="20" required></td>
+                <td colspan="1"></td>
+            </tr>
+            <tr>
+                <td>Implementação e Exploração de Base de Dados</td>
+                <td colspan="1"></td>
+                <td><input type="number" name="" id="Iebd1" min="0" max="20" required></td>
+                <td><input type="number" name="" id="Iebd2" min="0" max="20" required></td>
+            </tr>
+            <tr>
+                <td>Projeto Tecnológico</td>
+                <td colspan="1"></td>
+                <td><input type="number" name="" id="Pt1" min="0" max="20" required></td>
+                <td><input type="number" name="" id="Pt2" min="0" max="20" required></td>
+            </tr>
+            <tr>
+                <td>Programação Internet</td>
+                <td colspan="2"></td>
+                <td><input type="number" name="" id="Pi" min="0" max="20" required></td>
+            </tr>
+            <tr>
+                <td>Tecnologias de Desenvolvimento Multimédia</td>
+                <td colspan="2"></td>
+                <td><input type="number" name="" id="Tdm" min="0" max="20" required></td>
+            </tr>
+            <tr>
+                <td>Moral, Ética e Deontologia</td>
+                <td><input type="number" name="" id="Med1" min="0" max="20" required></td>
+                <td><input type="number" name="" id="Med2" min="0" max="20" required></td>
+                <td><input type="number" name="" id="Med3" min="0" max="20" required></td>
+            </tr>
+            <tr>
+                <td>Formação em Contexto de Trabalho</td>
+                <td colspan="2"></td>
+                <td><input type="number" name="" id="Fct" min="0" max="20" required></td>
+            </tr>
+            <tr>
+                <td>Prova de Aptidão Profissional</td>
+                <td colspan="2"></td>
+                <td><input type="number" name="" id="Pap" min="0" max="20" required></td>
+            </tr>
+        </table>
+        <label for="Media" id="media">Média: </label>
+
+        <br><br>
+        <br><br>
+        <label for="nome">Nome</label>
+        <input type="text" placeholder="Nome do aluno" id="nome" required>
+
+        <br><br>
+        <label for="cc">Cartão de cidadão</label>
+        <input type="text" placeholder="Número do CC do aluno" id="cc" required>
+
+        <br><br>
+        <label for="datacc">Validade do cartão de cidadão</label>
+        <input type="date" placeholder="Validade do CC do aluno" id="validade" required>
+
+        <br><br>
+        <input type="submit"></input>
+    </form>
+</body>
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+</html>

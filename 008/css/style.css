@@ -1,0 +1,40 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+td{
+    text-align: center;
+}
+td input[type="number"]{
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 40px;
+    display: block; 
+}
+
+td input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+#media{
+    margin-left: 50%;
+    font-weight: bold;
+}
+body input[type="submit"],label{
+    margin-left: 35%;
+}
